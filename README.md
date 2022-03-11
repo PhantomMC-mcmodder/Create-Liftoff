@@ -1,4 +1,4 @@
-<p align="center"><iframe src="https://canary.discord.com/widget?id=910129553849061407&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe><img src="https://cdn.discordapp.com/attachments/941856607573258281/944693040797327400/Engines_Ablaze.png" alt="Create: Ablaze Logo" width="200"></p>
+<p align="center"><img src="https://cdn.discordapp.com/attachments/941856607573258281/944693040797327400/Engines_Ablaze.png" alt="Create: Ablaze Logo" width="200"></p>
 <h1 align="center">Create: Ablaze  <br>
 	<a href="https://github.com/Tazer-Y/Ablaze"><img src="https://img.shields.io/badge/Available%20for-%201.18-c70039" alt="Supported Versions"></a>
 	<a href="https://github.com/Tazer-Y/Ablaze"><img src="https://img.shields.io/github/license/Tazer-Y/Ablaze?color=blue" alt="License"></a>
