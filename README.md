@@ -4,7 +4,6 @@
 	<a href="https://github.com/Tazer-Y/Ablaze"><img src="https://img.shields.io/github/license/Tazer-Y/Ablaze?color=blue" alt="License"></a>
 	<a href="https://discord.gg/W5pz7gtJp7"><img src="https://img.shields.io/discord/910129553849061407?color=5865f2&label=Feedback%20%26%20Help" alt="Discord"></a>
 </h1>
-<iframe src="https://canary.discord.com/widget?id=910129553849061407&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 Welcome to Create: Ablaze, a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets!
 
 Space rockets are the goal of this mod, but they're not as simple as you'd think. Rockets are made to be customizable and your first rocket will likely be huge, you'll need things like combustion chambers, pipes, valves, etc. Rockets are built with creativity in mind, you can make a simple spaceship or a missile to blow up your friends!
