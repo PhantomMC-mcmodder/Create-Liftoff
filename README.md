@@ -2,7 +2,7 @@
 <h1 align="center">Create: Ablaze  <br>
 	<a href="https://github.com/Tazer-Y/Ablaze"><img src="https://img.shields.io/badge/Available%20for-%201.18-c70039" alt="Supported Versions"></a>
 	<a href="https://github.com/Tazer-Y/Ablaze"><img src="https://img.shields.io/github/license/Tazer-Y/Ablaze?color=blue" alt="License"></a>
-	<a href="https://discord.gg/W5pz7gtJp7"><img src="https://img.shields.io/discord/620934202875183104?color=5865f2&label=Feedback%20%26%20Help&style=flat" alt="Discord"></a>
+	<a href="https://discord.gg/W5pz7gtJp7"><img src="https://img.shields.io/discord/910129553849061407?color=5865f2&label=Feedback%20%26%20Help" alt="Discord"></a>
 </h1>
 
 Welcome to Create: Ablaze, a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets!
