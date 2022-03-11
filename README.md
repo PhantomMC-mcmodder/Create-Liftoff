@@ -18,4 +18,4 @@ Check out the wiki and in-game Tool-tips for further info on how to use these fe
 - Support for Fabric: Not planned
 <hr>
 <!-- <h4 align="center">Find out more about Create: Ablaze on our <a href="">Project Page</a></h4> -->
-
+<iframe src="https://canary.discord.com/widget?id=910129553849061407&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
