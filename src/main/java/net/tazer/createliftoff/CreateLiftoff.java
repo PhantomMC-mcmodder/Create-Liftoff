@@ -1,4 +1,4 @@
-package net.tazer.ablaze;
+package net.tazer.createliftoff;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
@@ -7,40 +7,42 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.tazer.ablaze.common.item.AllItemGroups;
-import net.tazer.ablaze.common.registry.AllBlocks;
-import net.tazer.ablaze.common.registry.AllItems;
+import net.tazer.createliftoff.common.item.CLItemGroups;
+import net.tazer.createliftoff.common.registry.CLBlocks;
+import net.tazer.createliftoff.common.registry.CLItems;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod(Ablaze.MOD_ID)
-public class Ablaze
+@Mod(CreateLiftoff.MOD_ID)
+public class CreateLiftoff
 {
-    public static final String MOD_ID = "ablaze";
+    public static final String MOD_ID = "createliftoff";
     public static final Logger LOGGER = LogManager.getLogger();
 
     public static boolean isAlloyedLoaded = false;
     public static boolean isSteamPoweredLoaded = false;
 
-    private static final NonNullLazyValue<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy("ablaze");
+    private static final NonNullLazyValue<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(MOD_ID);
 
-    public Ablaze() {
+    public CreateLiftoff() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 
         isAlloyedLoaded = ModList.get().isLoaded("alloyed");
         isSteamPoweredLoaded = ModList.get().isLoaded("steampowered");
 
-        AllItems.register();
-        AllBlocks.register();
+        //basicRegistrate().creativeModeTab(CLItemGroups::baseTab, "Create: Liftoff");
+        CLItemGroups.register(); // TODO Remove once we actually add item/block entries
+        CLItems.register();
+        CLBlocks.register();
     }
 
     public static CreateRegistrate basicRegistrate() {
         return REGISTRATE.get();
     }
 
-    // Utility methods to save having to type out the item group each time.
+    // Utility method to save having to type out the item group each time.
     public static CreateRegistrate defaultRegistrate() {
-        return basicRegistrate().creativeModeTab(AllItemGroups::baseTab);
+        return basicRegistrate().creativeModeTab(CLItemGroups::baseTab);
     }
 }

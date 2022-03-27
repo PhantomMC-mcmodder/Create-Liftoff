@@ -43,7 +43,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                ablaze {
+                createliftoff {
                     source sourceSets.main
                 }
             }
@@ -57,7 +57,7 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             property 'forge.logging.console.level', 'debug'
             mods {
-                ablaze {
+                createliftoff {
                     source sourceSets.main
                 }
             }
@@ -71,10 +71,10 @@ minecraft {
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'ablaze', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'createliftoff', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                ablaze {
+                createliftoff {
                     source sourceSets.main
                 }
             }
@@ -148,7 +148,7 @@ jar {
 shadowJar {
     classifier = ''
     configurations = [project.configurations.shade]
-    relocate 'com.tterrag.registrate', 'net.tazer.ablaze.repack.registrate'
+    relocate 'com.tterrag.registrate', 'net.tazer.createliftoff.repack.registrate'
 }
 
 reobf {

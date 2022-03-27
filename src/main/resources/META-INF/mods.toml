@@ -1,58 +1,59 @@
 modLoader="javafml"
 loaderVersion="[39,)"
-issueTrackerURL="https://github.com/Tazer-Y/Ablaze"
+issueTrackerURL="https://github.com/Tazer-Y/Create-Liftoff/issues"
 license="MIT"
 
 [[mods]] #mandatory
-modId="ablaze"
+modId="createliftoff"
 version="0.0a"
-displayName="Create: Ablaze"
+displayName="Create: Liftoff"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
-displayURL="https://github.com/Tazer-Y/Ablaze"
-logoFile="ablaze.png"
+displayURL="https://github.com/Tazer-Y/Create-Liftoff"
+logoFile= "../createliftoff.png"
 credits="Thanks to our discord server members and contributors!"
 authors="Tazer, Fortress Nebula"
 description='''
-Create: Ablaze is a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets!'''
+Create: Liftoff is a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets!
+'''
 
-[[dependencies.ablaze]]
+[[dependencies.createliftoff]]
     modId="forge"
     mandatory=true
     versionRange="[39,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.ablaze]]
+[[dependencies.createliftoff]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.1,1.19)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.ablaze]]
+[[dependencies.createliftoff]]
     modId="flywheel"
     mandatory=true
     versionRange="[1.18-0.6.0.51]"
     ordering="AFTER"
     side="CLIENT"
 
-[[dependencies.ablaze]]
+[[dependencies.createliftoff]]
     modId="create"
     mandatory=true
     versionRange="[0.4d]"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.ablaze]]
+[[dependencies.createliftoff]]
     modId="alloyed"
     mandatory=false
     versionRange="[1.18.1]"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.ablaze]]
-modId="steampowered"
-mandatory=false
-versionRange="[1.18.1-2.0.0-alpha]"
-ordering="AFTER"
-side="BOTH"
+[[dependencies.createliftoff]]
+    modId="steampowered"
+    mandatory=false
+    versionRange="[1.18.1-2.0.0-alpha]"
+    ordering="AFTER"
+    side="BOTH"
