@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "results": [
+    {
+      "item": "createliftoff:coarse_basalt"
+    },
+    {
+      "item": "createliftoff:coarse_basalt",
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 100,
+  "heatRequirement": "heated"
+}

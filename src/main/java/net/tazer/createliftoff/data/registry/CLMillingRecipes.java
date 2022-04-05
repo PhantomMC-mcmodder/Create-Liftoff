@@ -10,7 +10,7 @@ import net.tazer.createliftoff.data.providers.CLProcessingRecipeProvider;
 public class CLMillingRecipes extends CLProcessingRecipeProvider {
     GeneratedRecipe
 
-    COARSE_BASALT = create("milling/coarse_basalt", builder -> builder
+    COARSE_BASALT = create("coarse_basalt", builder -> builder
             .duration(100)
             .require(Blocks.BASALT)
             .output(CLItems.COARSE_BASALT.get())
