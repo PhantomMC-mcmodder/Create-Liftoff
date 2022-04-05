@@ -14,8 +14,7 @@ public class CLMillingRecipes extends CLProcessingRecipeProvider {
             .duration(100)
             .require(Blocks.BASALT)
             .output(CLItems.COARSE_BASALT.get())
-            .output(.25f, CLItems.COARSE_BASALT.get())
-            .requiresHeat(HeatCondition.HEATED));
+            .output(.25f, CLItems.COARSE_BASALT.get()));
 
     public CLMillingRecipes(DataGenerator generator) {
         super(generator);
