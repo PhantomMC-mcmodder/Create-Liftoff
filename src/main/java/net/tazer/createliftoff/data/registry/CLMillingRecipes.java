@@ -1,7 +1,6 @@
 package net.tazer.createliftoff.data.registry;
 
 import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.level.block.Blocks;
 import net.tazer.createliftoff.common.registry.CLItems;
@@ -14,7 +13,7 @@ public class CLMillingRecipes extends CLProcessingRecipeProvider {
             .duration(100)
             .require(Blocks.BASALT)
             .output(CLItems.COARSE_BASALT.get())
-            .output(.25f, CLItems.COARSE_BASALT.get()));
+            .output(.5f, CLItems.COARSE_BASALT.get()));
 
     public CLMillingRecipes(DataGenerator generator) {
         super(generator);
