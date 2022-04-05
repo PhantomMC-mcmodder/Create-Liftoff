@@ -1,5 +1,5 @@
 {
-  "type": "create:milling",
+  "type": "create:crushing",
   "ingredients": [
     {
       "item": "minecraft:basalt"
@@ -7,12 +7,13 @@
   ],
   "results": [
     {
-      "item": "createliftoff:coarse_basalt"
+      "item": "createliftoff:coarse_basalt",
+      "count": 2
     },
     {
       "item": "createliftoff:coarse_basalt",
-      "chance": 0.25
+      "chance": 0.5
     }
   ],
-  "processingTime": 100
+  "processingTime": 150
 }

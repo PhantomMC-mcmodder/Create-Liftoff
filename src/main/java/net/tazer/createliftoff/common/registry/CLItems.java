@@ -12,5 +12,9 @@ public class CLItems {
             .item("coarse_basalt", Item::new)
             .register();
 
+    public static final ItemEntry<Item> BASALT_ALLOY = REGISTRATE
+            .item("basalt_alloy", Item::new)
+            .register();
+
     public static void register() {}
 }
