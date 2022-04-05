@@ -2,6 +2,7 @@ package net.tazer.createliftoff;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
@@ -32,10 +33,12 @@ public class CreateLiftoff
         isSteamPoweredLoaded = ModList.get().isLoaded("steampowered");
 
         //basicRegistrate().creativeModeTab(CLItemGroups::baseTab, "Create: Liftoff");
-        CLItemGroups.register(); // TODO Remove once we actually add item/block entries
+        //CLItemGroups.register();
         CLItems.register();
         CLBlocks.register();
     }
+
+    public static ResourceLocation resource(String path) { return new ResourceLocation(MOD_ID, path); }
 
     public static CreateRegistrate basicRegistrate() {
         return REGISTRATE.get();
