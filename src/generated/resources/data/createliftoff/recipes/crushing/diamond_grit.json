@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/diamond"
+    }
+  ],
+  "results": [
+    {
+      "item": "createliftoff:diamond_grit",
+      "count": 2
+    },
+    {
+      "item": "createliftoff:diamond_grit",
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 200
+}

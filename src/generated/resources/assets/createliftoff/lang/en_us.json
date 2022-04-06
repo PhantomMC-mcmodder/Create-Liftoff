@@ -1,5 +1,9 @@
 {
   "item.createliftoff.basalt_alloy": "Basalt Alloy",
   "item.createliftoff.coarse_basalt": "Coarse Basalt",
+  "item.createliftoff.diamond_grit": "Diamond Grit",
+  "item.createliftoff.incomplete_netherite_composite": "Incomplete Netherite Composite",
+  "item.createliftoff.netherite_composite": "Netherite Composite",
+  "item.createliftoff.netherite_sheet": "Netherite Sheet",
   "itemGroup.base_creative_tab": "Create: Liftoff"
 }

@@ -13,6 +13,7 @@ import net.tazer.createliftoff.CreateLiftoff;
 import net.tazer.createliftoff.data.registry.CLCrushingRecipes;
 import net.tazer.createliftoff.data.registry.CLMillingRecipes;
 import net.tazer.createliftoff.data.registry.CLMixingRecipes;
+import net.tazer.createliftoff.data.registry.CLPressingRecipes;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -32,6 +33,7 @@ public abstract class CLProcessingRecipeProvider extends CreateRecipeProvider {
         ALL_GENERATORS.add(new CLMillingRecipes(generator));
         ALL_GENERATORS.add(new CLMixingRecipes(generator));
         ALL_GENERATORS.add(new CLCrushingRecipes(generator));
+        ALL_GENERATORS.add(new CLPressingRecipes(generator));
 
         generator.addProvider(new DataProvider() {
 

@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "forge:plates/netherite"
+  },
+  "transitionalItem": {
+    "item": "createliftoff:incomplete_netherite_composite"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        },
+        {
+          "tag": "forge:dusts/diamond"
+        }
+      ],
+      "results": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        },
+        {
+          "tag": "forge:plates/netherite"
+        }
+      ],
+      "results": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        }
+      ],
+      "results": [
+        {
+          "item": "createliftoff:incomplete_netherite_composite"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "createliftoff:netherite_composite",
+      "chance": 120.0
+    }
+  ],
+  "loops": 1
+}

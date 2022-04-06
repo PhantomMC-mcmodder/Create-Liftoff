@@ -11,7 +11,7 @@
     },
     {
       "item": "createliftoff:coarse_basalt",
-      "chance": 0.25
+      "chance": 0.5
     }
   ],
   "processingTime": 100

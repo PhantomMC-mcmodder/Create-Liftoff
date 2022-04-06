@@ -3,27 +3,44 @@ package net.tazer.createliftoff.common.registry;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
+import net.minecraft.tags.Tag;
 import net.minecraft.world.item.Item;
 import net.tazer.createliftoff.CreateLiftoff;
 
 public class CLItems {
     private static final CreateRegistrate REGISTRATE = CreateLiftoff.defaultRegistrate();
 
-    public static final ItemEntry<Item> COARSE_BASALT = REGISTRATE
-            .item("coarse_basalt", Item::new)
+    /*
+    MATERIALS
+     */
+    public static final ItemEntry<Item> COARSE_BASALT = ingredient("coarse_basalt");
+    public static final ItemEntry<Item> DIAMOND_GRIT =
+            taggedIngredient("diamond_grit", CLTags.DIAMOND_DUST);
+
+    public static final ItemEntry<Item> BASALT_ALLOY = ingredient("basalt_alloy");
+    public static final ItemEntry<Item> NETHERITE_SHEET =
+            taggedIngredient("netherite_sheet", CLTags.NETHERITE_SHEET);
+
+    public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_NETHERITE_COMPOSITE = REGISTRATE
+            .item("incomplete_netherite_composite", SequencedAssemblyItem::new)
             .register();
 
-    public static final ItemEntry<Item> BASALT_ALLOY = REGISTRATE
-            .item("basalt_alloy", Item::new)
-            .register();
-
-    public static final ItemEntry<Item> ELECTRICAL_MECHANISM = REGISTRATE
-            .item("electrical_mechanism", Item::new)
-            .register();
+    public static final ItemEntry<Item> NETHERITE_COMPOSITE = ingredient("netherite_composite");
 
     public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_ELECTRICAL_MECHANISM = REGISTRATE
             .item("incomplete_electrical_mechanism", SequencedAssemblyItem::new)
             .register();
 
+    public static final ItemEntry<Item> ELECTRICAL_MECHANISM = ingredient("electrical_mechanism");
+
     public static void register() {}
+
+    @SafeVarargs
+    private static ItemEntry<Item> taggedIngredient(String name, Tag.Named<Item>... tags) {
+        return REGISTRATE.item(name, Item::new).tag(tags).register();
+    }
+
+    private static ItemEntry<Item> ingredient(String name) {
+        return taggedIngredient(name);
+    }
 }
