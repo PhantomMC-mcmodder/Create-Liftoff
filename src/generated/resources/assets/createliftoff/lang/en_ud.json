@@ -2,6 +2,8 @@
   "item.createliftoff.basalt_alloy": "\u028Eo\u05DF\u05DF\u2C6F \u0287\u05DF\u0250s\u0250\u15FA",
   "item.createliftoff.coarse_basalt": "\u0287\u05DF\u0250s\u0250\u15FA \u01DDs\u0279\u0250o\u0186",
   "item.createliftoff.diamond_grit": "\u0287\u0131\u0279\u2141 puo\u026F\u0250\u0131\u15E1",
+  "item.createliftoff.electrical_mechanism": "\u026Fs\u0131u\u0250\u0265\u0254\u01DDW \u05DF\u0250\u0254\u0131\u0279\u0287\u0254\u01DD\u05DF\u018E",
+  "item.createliftoff.incomplete_electrical_mechanism": "\u026Fs\u0131u\u0250\u0265\u0254\u01DDW \u05DF\u0250\u0254\u0131\u0279\u0287\u0254\u01DD\u05DF\u018E \u01DD\u0287\u01DD\u05DFd\u026Fo\u0254uI",
   "item.createliftoff.incomplete_netherite_composite": "\u01DD\u0287\u0131sod\u026Fo\u0186 \u01DD\u0287\u0131\u0279\u01DD\u0265\u0287\u01DDN \u01DD\u0287\u01DD\u05DFd\u026Fo\u0254uI",
   "item.createliftoff.netherite_composite": "\u01DD\u0287\u0131sod\u026Fo\u0186 \u01DD\u0287\u0131\u0279\u01DD\u0265\u0287\u01DDN",
   "item.createliftoff.netherite_sheet": "\u0287\u01DD\u01DD\u0265S \u01DD\u0287\u0131\u0279\u01DD\u0265\u0287\u01DDN",
