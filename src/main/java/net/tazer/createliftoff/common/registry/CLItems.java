@@ -16,5 +16,13 @@ public class CLItems {
             .item("basalt_alloy", Item::new)
             .register();
 
+    public static final ItemEntry<Item> ELECTRICAL_MECHANISM = REGISTRATE
+            .item("electrical_mechanism", Item::new)
+            .register();
+
+    public static final ItemEntry<Item> INCOMPLETE_ELECTRICAL_MECHANISM = REGISTRATE
+            .item("incomplete_electrical_mechanism", Item::new)
+            .register();
+
     public static void register() {}
 }
