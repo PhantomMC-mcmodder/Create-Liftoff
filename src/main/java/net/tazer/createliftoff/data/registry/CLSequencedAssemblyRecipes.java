@@ -28,7 +28,6 @@ public class CLSequencedAssemblyRecipes extends CreateRecipeProvider {
             .addStep(DeployerApplicationRecipe::new, b -> b.require(CLTags.DIAMOND_DUST))
             .addStep(DeployerApplicationRecipe::new, b -> b.require(CLItems.MAGMA_RESIN_BOTTLE.get()))
             .addStep(DeployerApplicationRecipe::new, b -> b.require(CLTags.NETHERITE_SHEET))
-            .addStep(MixingRecipe::new, b -> b.requiresHeat(HeatCondition.SUPERHEATED))
             .addStep(PressingRecipe::new, b -> b)
     );
 

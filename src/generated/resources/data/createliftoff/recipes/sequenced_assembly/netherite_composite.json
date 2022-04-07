@@ -56,20 +56,6 @@
       ]
     },
     {
-      "type": "create:mixing",
-      "ingredients": [
-        {
-          "item": "createliftoff:incomplete_netherite_composite"
-        }
-      ],
-      "results": [
-        {
-          "item": "createliftoff:incomplete_netherite_composite"
-        }
-      ],
-      "heatRequirement": "superheated"
-    },
-    {
       "type": "create:pressing",
       "ingredients": [
         {
