@@ -15,6 +15,7 @@ public class CLTags {
     Items
      */
     public static final Tag.Named<Item> NETHERITE_SHEET = forgeItemTag("plates/netherite");
+    public static final Tag.Named<Item> COPPER_SHEET = forgeItemTag("plates/copper");
     public static final Tag.Named<Item> DIAMOND_DUST = forgeItemTag("dusts/diamond");
     public static final Tag.Named<Item> BASALT = defaultItemTag("basalt");
 

@@ -13,25 +13,25 @@ public class CLItems {
     /*
     MATERIALS
      */
-    public static final ItemEntry<Item> COARSE_BASALT = ingredient("coarse_basalt");
-    public static final ItemEntry<Item> DIAMOND_GRIT =
-            taggedIngredient("diamond_grit", CLTags.DIAMOND_DUST);
 
-    public static final ItemEntry<Item> BASALT_ALLOY = ingredient("basalt_alloy");
-    public static final ItemEntry<Item> NETHERITE_SHEET =
-            taggedIngredient("netherite_sheet", CLTags.NETHERITE_SHEET);
+    public static final ItemEntry<Item>
+            COARSE_BASALT = ingredient("coarse_basalt"),
+            BASALT_ALLOY = ingredient("basalt_alloy"),
+            MAGMA_RESIN_BOTTLE = ingredient("magma_resin_bottle"),
+            NETHERITE_COMPOSITE = ingredient("netherite_composite"),
+            ELECTRICAL_MECHANISM = ingredient("electrical_mechanism");
+
+    public static final ItemEntry<Item>
+            NETHERITE_SHEET = taggedIngredient("netherite_sheet", CLTags.NETHERITE_SHEET),
+            DIAMOND_GRIT = taggedIngredient("diamond_grit", CLTags.DIAMOND_DUST);
 
     public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_NETHERITE_COMPOSITE = REGISTRATE
             .item("incomplete_netherite_composite", SequencedAssemblyItem::new)
             .register();
 
-    public static final ItemEntry<Item> NETHERITE_COMPOSITE = ingredient("netherite_composite");
-
     public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_ELECTRICAL_MECHANISM = REGISTRATE
             .item("incomplete_electrical_mechanism", SequencedAssemblyItem::new)
             .register();
-
-    public static final ItemEntry<Item> ELECTRICAL_MECHANISM = ingredient("electrical_mechanism");
 
     public static void register() {}
 
