@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "forge:plates/netherite"
+    "item": "minecraft:netherite_ingot"
   },
   "transitionalItem": {
     "item": "createliftoff:incomplete_netherite_composite"
@@ -24,13 +24,15 @@
       ]
     },
     {
-      "type": "create:deploying",
+      "type": "create:filling",
       "ingredients": [
         {
           "item": "createliftoff:incomplete_netherite_composite"
         },
         {
-          "tag": "createliftoff:magma_resin_bottle"
+          "fluid": "createliftoff:magma_resin",
+          "nbt": {},
+          "amount": 100
         }
       ],
       "results": [
@@ -46,7 +48,7 @@
           "item": "createliftoff:incomplete_netherite_composite"
         },
         {
-          "tag": "forge:plates/netherite"
+          "item": "minecraft:netherite_ingot"
         }
       ],
       "results": [
@@ -72,6 +74,7 @@
   "results": [
     {
       "item": "createliftoff:netherite_composite",
+      "count": 6,
       "chance": 120.0
     }
   ],

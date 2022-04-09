@@ -10,10 +10,7 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.HashCache;
 import net.minecraft.resources.ResourceLocation;
 import net.tazer.createliftoff.CreateLiftoff;
-import net.tazer.createliftoff.data.registry.CLCrushingRecipes;
-import net.tazer.createliftoff.data.registry.CLMillingRecipes;
-import net.tazer.createliftoff.data.registry.CLMixingRecipes;
-import net.tazer.createliftoff.data.registry.CLPressingRecipes;
+import net.tazer.createliftoff.data.registry.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -34,6 +31,8 @@ public abstract class CLProcessingRecipeProvider extends CreateRecipeProvider {
         ALL_GENERATORS.add(new CLMixingRecipes(generator));
         ALL_GENERATORS.add(new CLCrushingRecipes(generator));
         ALL_GENERATORS.add(new CLPressingRecipes(generator));
+        ALL_GENERATORS.add(new CLFillingRecipes(generator));
+        ALL_GENERATORS.add(new CLEmptyingRecipes(generator));
 
         generator.addProvider(new DataProvider() {
 

@@ -36,6 +36,7 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+            arg "-mixin.config=createliftoff.mixins.json"
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'mixin.env.remapRefMap', 'true'
@@ -51,6 +52,7 @@ minecraft {
 
         server {
             workingDirectory project.file('server')
+            arg "-mixin.config=createliftoff.mixins.json"
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'mixin.env.remapRefMap', 'true'
@@ -114,18 +116,18 @@ dependencies {
     implementation fg.deobf(registrate)
     shade registrate
 
-    implementation fg.deobf("com.simibubi.create:Create:mc1.18.1_v${create_version}")
+    implementation fg.deobf("com.simibubi.create:Create:mc${minecraft_version}_v${create_version}")
     implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:1.18-${flywheel_version}")
-    implementation fg.deobf("curse.maven:Create-Alloyed-${alloyed_version}")
-    implementation fg.deobf("curse.maven:Create-Steampowered-${steampowered_version}")
+    //implementation fg.deobf("curse.maven:Create-Alloyed-${alloyed_version}")
+    //implementation fg.deobf("curse.maven:Create-Steampowered-${steampowered_version}")
 
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
 
     // Make Testing Easier
-    runtimeOnly fg.deobf("curse.maven:Configured-457570:3640884")
-    runtimeOnly fg.deobf("curse.maven:Jade-324717:3614180")
-    runtimeOnly fg.deobf("curse.maven:Catalogue-459701:3559402")
+    runtimeOnly fg.deobf("curse.maven:Configured-457570:3721946")
+    runtimeOnly fg.deobf("curse.maven:Jade-324717:3681449")
+    runtimeOnly fg.deobf("curse.maven:Catalogue-459701:3721991")
 
     annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
 }

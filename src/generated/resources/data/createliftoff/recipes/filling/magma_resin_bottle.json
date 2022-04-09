@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "fluid": "createliftoff:magma_resin",
+      "nbt": {},
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createliftoff:magma_resin_bottle"
+    }
+  ]
+}

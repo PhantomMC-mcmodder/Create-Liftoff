@@ -1,5 +1,6 @@
 package net.tazer.createliftoff.data.registry;
 
+import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.content.contraptions.processing.HeatCondition;
 import net.minecraft.data.DataGenerator;
@@ -10,6 +11,7 @@ import net.tazer.createliftoff.common.registry.CLFluids;
 import net.tazer.createliftoff.common.registry.CLItems;
 import net.tazer.createliftoff.data.providers.CLProcessingRecipeProvider;
 
+@SuppressWarnings("unused")
 public class CLMixingRecipes extends CLProcessingRecipeProvider {
     GeneratedRecipe
 
@@ -18,17 +20,14 @@ public class CLMixingRecipes extends CLProcessingRecipeProvider {
             .require(CLItems.COARSE_BASALT.get())
             .require(Items.IRON_INGOT)
             .output(CLItems.BASALT_ALLOY.get())
-            .requiresHeat(HeatCondition.HEATED));
+            .requiresHeat(HeatCondition.HEATED)),
 
-/* GeneratedRecipe
-
-    TODO: MAGMA_RESIN = create("magma_resin", builder -> builder
+    MAGMA_RESIN = create("magma_resin", builder -> builder
            .require(Items.MAGMA_CREAM)
-           .require(Items.BLAZE_POWDER)
-           .require(Lava, amount 100mb)
-           .output(Magma Resin, amount 100mb)
+           .require(AllFluids.HONEY.get(), 100)
+           .output(CLFluids.MAGMA_RESIN.get(), 100)
            .requiresHeat(HeatCondition.SUPERHEATED));
- */
+
 
     public CLMixingRecipes(DataGenerator generator) {
         super(generator);

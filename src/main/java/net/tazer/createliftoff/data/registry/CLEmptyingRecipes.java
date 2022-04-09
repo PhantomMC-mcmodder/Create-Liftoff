@@ -3,24 +3,26 @@ package net.tazer.createliftoff.data.registry;
 import com.simibubi.create.AllRecipeTypes;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
+import net.tazer.createliftoff.common.registry.CLFluids;
 import net.tazer.createliftoff.common.registry.CLItems;
 import net.tazer.createliftoff.data.providers.CLProcessingRecipeProvider;
 
 @SuppressWarnings("unused")
-public class CLPressingRecipes extends CLProcessingRecipeProvider {
+public class CLEmptyingRecipes extends CLProcessingRecipeProvider {
     GeneratedRecipe
 
-    NETHERITE_SHEET = create("netherite_sheet", builder -> builder
-            .require(Items.NETHERITE_INGOT)
-            .output(CLItems.NETHERITE_SHEET.get()));
+    MAGMA_RESIN = create("magma_resin", builder -> builder
+            .require(CLItems.MAGMA_RESIN_BOTTLE.get())
+            .output(Items.GLASS_BOTTLE)
+            .output(CLFluids.MAGMA_RESIN.get(), 250)
+    );
 
-    public CLPressingRecipes(DataGenerator generator) {
+    public CLEmptyingRecipes(DataGenerator generator) {
         super(generator);
     }
 
     @Override
     protected AllRecipeTypes getRecipeType() {
-        return AllRecipeTypes.PRESSING;
+        return AllRecipeTypes.EMPTYING;
     }
 }

@@ -2,16 +2,17 @@ package net.tazer.createliftoff.data.registry;
 
 import com.simibubi.create.AllRecipeTypes;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.world.level.block.Blocks;
 import net.tazer.createliftoff.common.registry.CLItems;
+import net.tazer.createliftoff.common.registry.CLTags;
 import net.tazer.createliftoff.data.providers.CLProcessingRecipeProvider;
 
+@SuppressWarnings("unused")
 public class CLMillingRecipes extends CLProcessingRecipeProvider {
     GeneratedRecipe
 
     COARSE_BASALT = create("coarse_basalt", builder -> builder
             .duration(100)
-            .require(Blocks.BASALT)
+            .require(CLTags.BASALT)
             .output(CLItems.COARSE_BASALT.get())
             .output(.5f, CLItems.COARSE_BASALT.get()));
 

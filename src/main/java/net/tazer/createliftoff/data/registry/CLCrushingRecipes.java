@@ -9,6 +9,7 @@ import net.tazer.createliftoff.common.registry.CLItems;
 import net.tazer.createliftoff.common.registry.CLTags;
 import net.tazer.createliftoff.data.providers.CLProcessingRecipeProvider;
 
+@SuppressWarnings("unused")
 public class CLCrushingRecipes extends CLProcessingRecipeProvider {
     GeneratedRecipe
 

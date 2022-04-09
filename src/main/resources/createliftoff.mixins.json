@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.tazer.createliftoff.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "createsteam.refmap.json",
+  "mixins": [],
+  "minVersion": "0.8",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,12 +1,13 @@
 {
+  "fluid.createliftoff.magma_resin": "Magma Resin",
   "item.createliftoff.basalt_alloy": "Basalt Alloy",
   "item.createliftoff.coarse_basalt": "Coarse Basalt",
   "item.createliftoff.diamond_grit": "Diamond Grit",
   "item.createliftoff.electrical_mechanism": "Electrical Mechanism",
   "item.createliftoff.incomplete_electrical_mechanism": "Incomplete Electrical Mechanism",
   "item.createliftoff.incomplete_netherite_composite": "Incomplete Netherite Composite",
+  "item.createliftoff.magma_resin_bottle": "Magma Resin Bottle",
   "item.createliftoff.netherite_composite": "Netherite Composite",
   "item.createliftoff.netherite_sheet": "Netherite Sheet",
-  "item.createliftoff.magma_resin_bottle": "Magma Resin Bottle",
   "itemGroup.base_creative_tab": "Create: Liftoff"
 }

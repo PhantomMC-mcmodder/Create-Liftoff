@@ -33,14 +33,14 @@ Create: Liftoff is a mod that hopes to empower the player even more with the ind
 [[dependencies.createliftoff]]
     modId="flywheel"
     mandatory=true
-    versionRange="[1.18-0.6.0.51]"
+    versionRange="[1.18-0.6.2,)"
     ordering="AFTER"
     side="CLIENT"
 
 [[dependencies.createliftoff]]
     modId="create"
     mandatory=true
-    versionRange="[0.4d]"
+    versionRange="[0.4.1,)"
     ordering="AFTER"
     side="BOTH"
 

@@ -1,9 +1,11 @@
 package net.tazer.createliftoff.common.registry;
 
+import com.simibubi.create.AllTags;
 import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
 import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.tazer.createliftoff.CreateLiftoff;
 
@@ -17,13 +19,13 @@ public class CLItems {
     public static final ItemEntry<Item>
             COARSE_BASALT = ingredient("coarse_basalt"),
             BASALT_ALLOY = ingredient("basalt_alloy"),
-            MAGMA_RESIN_BOTTLE = ingredient("magma_resin_bottle"),
             NETHERITE_COMPOSITE = ingredient("netherite_composite"),
             ELECTRICAL_MECHANISM = ingredient("electrical_mechanism");
 
     public static final ItemEntry<Item>
             NETHERITE_SHEET = taggedIngredient("netherite_sheet", CLTags.NETHERITE_SHEET),
-            DIAMOND_GRIT = taggedIngredient("diamond_grit", CLTags.DIAMOND_DUST);
+            DIAMOND_GRIT = taggedIngredient("diamond_grit", CLTags.DIAMOND_DUST),
+            MAGMA_RESIN_BOTTLE = taggedIngredient("magma_resin_bottle", AllTags.AllItemTags.UPRIGHT_ON_BELT.tag);
 
     public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_NETHERITE_COMPOSITE = REGISTRATE
             .item("incomplete_netherite_composite", SequencedAssemblyItem::new)
@@ -36,7 +38,7 @@ public class CLItems {
     public static void register() {}
 
     @SafeVarargs
-    private static ItemEntry<Item> taggedIngredient(String name, Tag.Named<Item>... tags) {
+    private static ItemEntry<Item> taggedIngredient(String name, TagKey<Item>... tags) {
         return REGISTRATE.item(name, Item::new).tag(tags).register();
     }
 

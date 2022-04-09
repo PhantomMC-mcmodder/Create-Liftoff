@@ -30,7 +30,7 @@
           "item": "createliftoff:incomplete_electrical_mechanism"
         },
         {
-          "item": "minecraft:iron_ingot"
+          "item": "create:iron_sheet"
         }
       ],
       "results": [
@@ -60,36 +60,6 @@
     {
       "item": "createliftoff:electrical_mechanism",
       "chance": 120.0
-    },
-    {
-      "item": "create:copper_sheet",
-      "chance": 8.0
-    },
-    {
-      "item": "create:andesite_alloy",
-      "chance": 8.0
-    },
-    {
-      "item": "create:cogwheel",
-      "chance": 5.0
-    },
-    {
-      "item": "create:shaft",
-      "chance": 2.0
-    },
-    {
-      "item": "create:crushed_copper_ore",
-      "chance": 2.0
-    },
-    {
-      "item": "minecraft:iron_nugget",
-      "chance": 2.0
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:compass"
     }
   ],
   "loops": 5
