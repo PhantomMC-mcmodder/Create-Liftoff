@@ -4,12 +4,12 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "createliftoff:block/brass_casing",
-		"1": "create:block/axis_top",
-		"2": "createliftoff:brass_gearbox",
+		"1": "createliftoff:block/axis_top",
+		"2": "createliftoff:block/brass_gearbox",
 		"4": "createliftoff:block/punch_reader",
-		"5": "createliftoff:block/punch_writer_item",
-		"6": "createliftoff:brass_casing_belt",
-		"particle": "create:block/axis"
+		"5": "createliftoff:block/punch_reader_top",
+		"6": "createliftoff:block/brass_casing_belt",
+		"particle": "createliftoff:block/axis"
 	},
 	"elements": [
 		{
@@ -193,26 +193,31 @@
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
 		},
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": []
 		},
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": []
 		},
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [9]
 		},
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [10]
 		}
 	]
