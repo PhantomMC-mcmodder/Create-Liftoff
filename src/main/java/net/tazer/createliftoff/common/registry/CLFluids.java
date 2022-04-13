@@ -10,7 +10,17 @@ public class CLFluids {
 
     public static final FluidEntry<VirtualFluid> MAGMA_RESIN = REGISTRATE.virtualFluid("magma_resin")
             .lang("Magma Resin")
-            //.attributes(builder -> builder.viscosity(2000).density(1400))
+            .register();
+
+    public static final FluidEntry<VirtualFluid> COMPRESSED_AIR = REGISTRATE.virtualFluid("compressed_air")
+            .lang("Compressed Air")
+            .attributes(builder -> builder.density(-10))
+            .register();
+
+    // TODO: Add Gaseous Oxygen, as well as Gaseous and Liquid Hydrogen
+
+    public static final FluidEntry<VirtualFluid> LIQUID_OXYGEN = REGISTRATE.virtualFluid("liquid_oxygen")
+            .lang("Liquid Oxygen")
             .register();
 
     public static void register() {}

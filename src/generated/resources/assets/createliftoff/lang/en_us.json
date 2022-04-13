@@ -1,4 +1,7 @@
 {
+  "block.createliftoff.air_compressor": "Air Compressor",
+  "fluid.createliftoff.compressed_air": "Compressed Air",
+  "fluid.createliftoff.liquid_oxygen": "Liquid Oxygen",
   "fluid.createliftoff.magma_resin": "Magma Resin",
   "item.createliftoff.basalt_alloy": "Basalt Alloy",
   "item.createliftoff.coarse_basalt": "Coarse Basalt",

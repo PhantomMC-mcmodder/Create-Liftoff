@@ -9,9 +9,7 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tazer.createliftoff.common.item.CLItemGroups;
-import net.tazer.createliftoff.common.registry.CLBlocks;
-import net.tazer.createliftoff.common.registry.CLFluids;
-import net.tazer.createliftoff.common.registry.CLItems;
+import net.tazer.createliftoff.common.registry.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -38,6 +36,8 @@ public class CreateLiftoff
         CLItems.register();
         CLBlocks.register();
         CLFluids.register();
+        CLTileEntities.register();
+        CLBlockPartials.register();
     }
 
     public static ResourceLocation resource(String path) { return new ResourceLocation(MOD_ID, path); }

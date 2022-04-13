@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "createliftoff:block/air_compressor/block",
+      "y": 90
+    },
+    "axis=z": {
+      "model": "createliftoff:block/air_compressor/block"
+    }
+  }
+}

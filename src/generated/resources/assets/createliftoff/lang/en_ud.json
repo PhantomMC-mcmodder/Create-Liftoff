@@ -1,4 +1,7 @@
 {
+  "block.createliftoff.air_compressor": "\u0279oss\u01DD\u0279d\u026Fo\u0186 \u0279\u0131\u2C6F",
+  "fluid.createliftoff.compressed_air": "\u0279\u0131\u2C6F p\u01DDss\u01DD\u0279d\u026Fo\u0186",
+  "fluid.createliftoff.liquid_oxygen": "u\u01DDb\u028ExO p\u0131nb\u0131\uA780",
   "fluid.createliftoff.magma_resin": "u\u0131s\u01DD\u1D1A \u0250\u026Fb\u0250W",
   "item.createliftoff.basalt_alloy": "\u028Eo\u05DF\u05DF\u2C6F \u0287\u05DF\u0250s\u0250\u15FA",
   "item.createliftoff.coarse_basalt": "\u0287\u05DF\u0250s\u0250\u15FA \u01DDs\u0279\u0250o\u0186",
