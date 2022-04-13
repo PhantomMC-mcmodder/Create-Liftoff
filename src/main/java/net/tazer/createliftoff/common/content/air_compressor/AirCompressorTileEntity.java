@@ -1,7 +1,6 @@
 package net.tazer.createliftoff.common.content.air_compressor;
 
 import com.jozufozu.flywheel.repack.joml.Math;
-import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.content.contraptions.goggles.IHaveGoggleInformation;
 import com.simibubi.create.content.contraptions.relays.encased.SplitShaftTileEntity;
 import net.minecraft.core.BlockPos;
@@ -9,7 +8,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
@@ -29,8 +27,8 @@ public class AirCompressorTileEntity extends SplitShaftTileEntity implements IHa
     public FluidTank airTank;
     public LazyOptional<IFluidHandler> capability;
 
-    public int prevRunningTicks;
-    public int runningTicks;
+    public int runningTicks = 0;
+    public boolean running = false;
 
     public AirCompressorTileEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state) {
         super(typeIn, pos, state);
@@ -49,32 +47,37 @@ public class AirCompressorTileEntity extends SplitShaftTileEntity implements IHa
     public void tick() {
         super.tick();
 
+        running = getSpeed() != 0;
+
         if (!level.isClientSide) {
             int compressedAirGenerated = (int) (Math.abs(getSpeed()) / 256 * 20);
 
             airTank.fill(new FluidStack(CLFluids.COMPRESSED_AIR.get(), compressedAirGenerated),
                     IFluidHandler.FluidAction.EXECUTE);
-            sendData();
+            //sendData();
         }
 
-        prevRunningTicks = runningTicks;
-        runningTicks += getRunningTickSpeed();
+        System.out.println(runningTicks);
+
+        if (running) runningTicks += getRunningTickSpeed();
         runningTicks %= 360;
 
         sendData();
     }
 
     public float getRenderedBellowOffset(float partialTicks) {
-        if (getSpeed() == 0)
+        if (!running)
             return 0;
-        float ticks = Mth.lerp(partialTicks, prevRunningTicks, runningTicks);
-        return (Math.sin(Math.toRadians(ticks)) - 1) / 10;
+        float ticks = Mth.clamp(runningTicks + partialTicks, 0, 360);
+
+        if (runningTicks == 0) return 0;
+        return (Math.cos(Math.toRadians(ticks)) - 1) / 10;
     }
 
     public int getRunningTickSpeed() {
         if (getSpeed() == 0)
             return 0;
-        return (int) Mth.lerp(Mth.clamp(Math.abs(getSpeed()) / 512f, 0, 1), 1, 60);
+        return (int) Mth.lerp(Mth.clamp(Math.abs(getSpeed()) / 256f, 0, 1), 5, 15);
     }
 
     @NotNull
@@ -100,7 +103,7 @@ public class AirCompressorTileEntity extends SplitShaftTileEntity implements IHa
     @Override
     protected void read(CompoundTag compound, boolean clientPacket) {
         airTank.readFromNBT(compound.getCompound("AirTank"));
-        prevRunningTicks = runningTicks = compound.getInt("Ticks");
+        runningTicks = compound.getInt("Ticks");
         super.read(compound, clientPacket);
     }
 
