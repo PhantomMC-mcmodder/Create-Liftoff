@@ -65,14 +65,21 @@ public class AirCompressorTileEntity extends SplitShaftTileEntity implements IHa
         sendData();
     }
 
+    public static float smoothStep(float value) {
+        value = Mth.clamp(value, -1, 1);
+        return value * value * (3 - 2 * value);
+    }
+
     public float getRenderedBellowOffset(float partialTicks) {
         if (!running)
             return 0;
         float ticks = Mth.clamp(runningTicks + partialTicks, 0, 360);
 
         if (runningTicks == 0) return 0;
-        return (Math.cos(Math.toRadians(ticks)) - 1) / 10;
+        return ((smoothStep((float) Math.sin(ticks * (Math.PI / 360)))-1) / 15)*2f;
     }
+
+
 
     public int getRunningTickSpeed() {
         if (getSpeed() == 0)
